@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Weather App</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<div class="mdiv">
+		<div class="container">
+			<h3 class="heading">Wheather Forcasting</h3>
+			<form>
+				<div class="component">
+					<div>
+						<input type="text" name="city" id="city_name" placeholder="Enter a City name" autocomplete="off" autofocus>
+					</div>
+					<div class="btn">
+						<button type="button" class="srch_btn" onclick="fetchCity()"><img src="https://cdn-icons-png.freepik.com/256/163/163723.png" alt="Search Button" height="25px"> </button>
+					</div>
+				</div>
+			
+			<!-- <div class=""> -->
+				<div align="center" style="margin-top: -5px;">
+					<img src="https://cdn-icons-png.flaticon.com/512/1779/1779940.png" alt="Weather img" height="150px" class="Weather-img" >
+				</div>
+				<div align="center">
+					<span id="city">CITY NAME</span>
+					<br>
+					<span class="measurement" id="temp">0°C</span>
+					<br>
+					<span class="headings">FEELS ≈</span>
+					<span class="measurement" id="temp_like">0°C</span> 
+					<!-- <hr>
+					<span class="headings" id="city">FEELS LIKE</span>
+					<span class="measurement" id="temp_like">0°C</span> -->
+					<!-- <table>
+						<tr>
+							<span id="city">CITY NAME</span>
+							<br>
+							<span class="measurement" id="temp">0°C</span>
+						</tr>
+						<tr>
+							<span class="headings">FEELS LIKE</span>
+							<span class="measurement" id="temp_like">0°C</span>
+						</tr>
+					</table> -->
+				</div>
+				<div align="center" style="margin-top:20px">
+					<table width="100%" cellpadding="10px">
+						<tr align="center">
+							<td>
+								<h4 class="headings">WIND SPEED</h4>
+								<span class="measurement" id="wind_speed">0 KM/h</span>
+							</td>
+							<td>
+								<h4 class="headings">HUMIDITY</h4>
+								<span class="measurement" id="humidity">0 g/KG</span>
+							</td>
+						</tr>
+						
+					</table>
+				</div>
+			<!-- </div> -->
+			</form>
+		</div>
+		<!-- <h1 align="center">My Weather App.</h1> -->
+	</div>
+
+</body>
+</html>
