@@ -7,9 +7,9 @@ async function fetchWeatherData(cityName){
 	let city = document.getElementById("city")
 	city.innerHTML = data.name;
 	let windSpeed = document.getElementById("wind_speed")
-	windSpeed.innerHTML = data.wind.speed +" KM/h";
+	windSpeed.innerHTML = data.wind.speed +" km/h";
 	let humidity = document.getElementById("humidity")
-	humidity.innerHTML = data.main.humidity+" g/KG"
+	humidity.innerHTML = data.main.humidity+" g/kg"
 	let temp = document.getElementById("temp")
 	temp.innerHTML = Math.round((data.main.temp)-273.15)+"°C";
 	temp_like.innerHTML = Math.round((data.main.feels_like)-273.15)+"°C";
